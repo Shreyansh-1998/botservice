@@ -1,0 +1,14 @@
+botbuilder-core==4.15.0
+botbuilder-dialogs==4.15.0
+botbuilder-ai==4.15.0
+msal==1.18.0
+azure-identity==1.12.0
+azure-keyvault-secrets==4.7.0
+azure-storage-blob==12.14.0
+requests==2.31.0
+msgraph-core==0.2.2
+python-dotenv==1.0.0
+pytest==7.4.2
+pytest-cov==4.1.0
+opencensus-ext-azure==1.1.0
+loguru==0.6.0
