@@ -5,7 +5,7 @@ import logging
 logging_str="[%(asctime)s:%(levelname)s:%(module)s:%(message)s]"
 
 log_dir="logs"
-log_filepath=os.filepath.join(log_dir,"logfiles.log")
+log_filepath=os.path.join(log_dir,"logfiles.log")
 os.makedirs(log_dir,exist_ok=True)
 
 logging.basicConfig(
@@ -17,4 +17,7 @@ logging.basicConfig(
     ]
 )
 
-logger.loggin.getLogger("Bot")
+logger = logging.getLogger("Bot")
+
+
+logger.info("Logging is configured and Bot logger is ready to use.")
