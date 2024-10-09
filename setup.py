@@ -27,6 +27,14 @@ for filepath in list_of_files:
     if filedir!="":
         os.makedirs(filedir,exist_ok=True)
         logging.info("Directory created at {filedir} for dile {filename}")
+    
+    # Create a .gitkeep file to ensure Git tracks the empty directory
+    gitkeep_path = Path(filedir) / ".gitkeep"
+    if not gitkeep_path.exists():
+        with open(gitkeep_path, 'w') as f:
+            pass  # Create an empty .gitkeep file
+        logging.info(f".gitkeep created at {gitkeep_path}")
+
 
     if(not os.path.exists(filepath))or(os.path.getsize(filepath)==0):
         with open(filepath,'w') as f:
