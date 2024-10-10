@@ -26,7 +26,7 @@ for filepath in list_of_files:
 
     if filedir!="":
         os.makedirs(filedir,exist_ok=True)
-        logging.info("Directory created at {filedir} for dile {filename}")
+        logging.info("Directory created at {filedir} for file {filename}")
     
     # Create a .gitkeep file to ensure Git tracks the empty directory
     gitkeep_path = Path(filedir) / ".gitkeep"
